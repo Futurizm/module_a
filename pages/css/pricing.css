@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS reset style */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;     
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1;
+	font-style: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+
+/* CSS reset style */
+
+/* =========Technical block=============================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 15px;
+	min-height: 100vh;
+}
+
+/* ======================================== */
+
+
+.pricing__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.pricing__title {
+	font-weight: 600;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.pricing__subtitle {
+	opacity: 0.8;
+}
+
+.pricing__cards {
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+
+.cards__body {
+	box-shadow: 10px 10px 5px rgb(226, 226, 226);
+}
+
+.cards__image {
+	margin-bottom: 10px;
+	flex: 1 1 auto;
+}
+
+.cards__img {
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.cards__text {
+	text-align: center;
+}
+
+.cards__title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	max-width: 300px;
+}
+
+.cards__subtitle {
+	font-size: 17px;
+	opacity: 0.9;
+}
+
+.cards__body {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cards__body:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 1080px) {
+	.pricing__cards{
+		display: flex;
+		justify-content: center;
+	}
+
+
+	.last {
+		align-items: center;
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 768px) {
+	.pricing__title {
+		padding-top: 20px;
+		font-size: 25px;
+	}
+
+	.pricing__subtitle {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 515px) {
+	.pricing__title {
+		text-align: center;
+	}
+	.pricing__subtitle {
+		text-align: center;
+	}
+}
